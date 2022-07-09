@@ -7,15 +7,16 @@
 }
 #navbar{
     position: relative;
-    height: 450px;
+    height: 425px;
+    overflow: hidden;
 }
 
 #rightMenu{
     margin-top: 50px;
 }
 #right{
-    position: absolute;
-    z-index: 3;
+    position: fixed;
+    z-index: 4;
     width: 150px;
     height: 100vh;
     line-height: 200%;
@@ -24,6 +25,12 @@
     background-image: linear-gradient(#4d8e53 , #242424 );
     transition: right 0.5s;
     transition-timing-function: cubic-bezier(.96,.06,.18,.76);
+}
+#right li{
+    transition: 0.5s;
+}
+#right li:hover{
+    background-color: rgba(167, 176, 184 , 0.7);
 }
 .statusZero{
     right: 0 !important;
@@ -56,18 +63,21 @@
     padding: 9px 8px 9px 5px;
 }
 #threeLine{
-    position: absolute;
-    z-index: 3;
+    background-color: #4d8e53;
+    position: fixed;
+    z-index: 4;
     width: 30px;
     height: 30px;
     top: 10px;
-    right: 15px;
+    right: 0;
     cursor: pointer;
     transition: right 0.5s;
+    border-radius: 10px 0 0 10px;
+    padding-top: 5px;
     transition-timing-function: cubic-bezier(.76,-0.48,0,1.5);
 }
 .statusRight{
-    right: 160px !important;
+    right: 150px !important;
 }
 #shortWidth{
     height: 2px;
@@ -80,7 +90,7 @@
 .width{
     width: 25px;
     height: 2px;
-    background-color: rgb(87, 81, 81);
+    background-color: rgb(228, 225, 225);
     margin: 5px 3px;
     transition: 1s;
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
@@ -155,6 +165,29 @@
     margin: 0 auto;
     border-radius: 7px;
     transition: 0.3s;
+}
+#info{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+#about{
+    margin-bottom: 25px;
+}
+.info{
+    margin: 0 0 10px 20px;
+    padding: 0 5px;
+    font-size: 30px;
+}
+.about{
+    border: 2px solid gray;
+}
+#info p , #info label {
+    padding: 5px;
+    line-height: 150%;
+}
+#info label{
+    width: 110px;
+    display: inline-block;
 }
 @media screen and (min-width: 920px){
     #right{
