@@ -169,25 +169,35 @@
 #info{
     text-align: justify;
     margin-bottom: 10px;
+    display: flex;
+    font-size: 20px;
+}
+#basicInfo{
+    line-height: 300%;
+    text-align: center;
+    transform: translateX(660px);
+    transition: 0.5s;
 }
 #about{
     margin-bottom: 25px;
-}
-.info{
-    margin: 0 0 10px 20px;
-    padding: 0 5px;
-    font-size: 30px;
-}
-.about{
-    border: 2px solid gray;
-}
-#info p , #info label {
-    padding: 5px;
-    line-height: 150%;
+    transform: translateX(-660px);
+    transition: 0.5s;
+
 }
 #info label{
-    width: 110px;
+    width: 130px;
     display: inline-block;
+    font-weight: bold;
+}
+#info:first-child{
+    order: 3;
+}
+.transformLeft{
+    transform: translateX(0px) !important;
+}
+.transformRight{
+    transform: translateX(0px) !important;
+
 }
 @media screen and (min-width: 920px){
     #right{
