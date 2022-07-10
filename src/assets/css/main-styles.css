@@ -177,17 +177,40 @@
     text-align: center;
     transform: translateX(660px);
     transition: 0.5s;
+    border: 2px solid #505050;
+    padding: 5px;
 }
 #about{
+    line-height: 200%;
     margin-bottom: 25px;
     transform: translateX(-660px);
     transition: 0.5s;
-
+    border: 2px solid #505050;
+    padding: 5px;
 }
 #info label{
     width: 130px;
     display: inline-block;
     font-weight: bold;
+}
+.about{
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: -24px;
+    padding: 3px;
+    background-color: white;
+    margin-left: 15px;
+    display: inline-block;
+}
+.basic{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: -34px;
+    padding: 3px;
+    background-color: white;
 }
 #info:first-child{
     order: 3;

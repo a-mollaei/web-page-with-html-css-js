@@ -30,8 +30,8 @@ threeLine.addEventListener("click", () => {
 });
 
 const nodes = [
-    {name:about , SW:80 , classin:'transformLeft'},
-    {name:basicInfo , SW:80 , classin:'transformRight' }
+    {name:about , SW:20 , classin:'transformLeft'},
+    {name:basicInfo , SW:20 , classin:'transformRight' }
 ]
 function scrollCustom(nodes){
     console.log(window.scrollY)
