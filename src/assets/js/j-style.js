@@ -7,6 +7,8 @@ let thirdLine = document.getElementById("bottomLine").classList;
 const body = document.querySelector("body");
 const about = document.getElementById("about");
 const basicInfo = document.getElementById("basicInfo");
+const navbar = document.getElementById('navbar');
+const menu = document.getElementById('menu');
 let statusMenu = false;
 
 threeLine.addEventListener("click", () => {
@@ -44,3 +46,11 @@ function scrollCustom(nodes){
 document.addEventListener("scroll", () => {
   scrollCustom(nodes);
 });
+
+document.addEventListener('scroll' , ()=>{
+  if(window.scrollY >= 280){
+    menu.classList.add('scroll280');
+  }else if(window.scrollY < 280){
+    menu.classList.remove('scroll280');
+  }
+})
